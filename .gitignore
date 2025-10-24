@@ -1,0 +1,77 @@
+# 1С Development Project .gitignore
+
+# Временные файлы 1С
+*.log
+*.lgd
+*.lgp
+*.tmp
+*.bak
+*.old
+
+# Файлы конфигурации (если не нужно отслеживать)
+# *.cf
+# *.dt
+
+# Папки с временными данными
+temp/
+tmp/
+cache/
+
+# Файлы базы данных
+*.1cd
+*.dt
+
+# Файлы журналов
+*.log
+
+# Временные файлы Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js (если используется)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (если используется)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Файлы проекта
+*.user
+*.suo
+*.sln.docstates
+
+# Резервные копии
+backup/
+backups/
+*.backup
+
+# Документация сборки
+build/
+dist/
+
+# Файлы конфигурации с секретами
+config.local.*
+secrets.*
+
+# Файлы тестирования
+test-results/
+coverage/
+
+# Файлы развертывания
+deployment/
+release/

@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "1c-platform": {
+      "command": "npx",
+      "args": [
+        "@1c-platform/mcp-server"
+      ],
+      "env": {
+        "PLATFORM_VERSION": "8.3.27.1688",
+        "CONFIGURATION_TYPE": "Framework",
+        "LANGUAGE": "Russian"
+      }
+    },
+    "1c-metacode": {
+      "command": "npx", 
+      "args": [
+        "@1c-metacode/mcp-server"
+      ],
+      "env": {
+        "PLATFORM_VERSION": "8.3.27.1688",
+        "CONFIGURATION_PATH": "./03_1C_Configuration/",
+        "LANGUAGE": "Russian"
+      }
+    }
+  },
+  "settings": {
+    "platform": {
+      "version": "8.3.27.1688",
+      "configuration": "Framework",
+      "applicationType": "ManagedApplication",
+      "scriptVariant": "Russian"
+    },
+    "development": {
+      "codeStyle": "1C_BSL_Standards",
+      "documentation": "Russian",
+      "logging": "DiagnosticMessages"
+    },
+    "mcp": {
+      "enabledServers": ["1c-platform", "1c-metacode"],
+      "timeout": 30000,
+      "retryAttempts": 3
+    }
+  }
+}
